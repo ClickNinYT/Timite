@@ -7,8 +7,8 @@ pluginManagement {
     }
 }
 
-rootProject.name = "tentacles"
-for (name in listOf("Tentacles-API", "Tentacles-Server")) {
+rootProject.name = "timite"
+for (name in listOf("Timite-API", "Timite-Server")) {
     val projName = name.toLowerCase(Locale.ENGLISH)
     include(projName)
     findProject(":$projName")!!.projectDir = file(name)
