@@ -5,10 +5,10 @@ Subject: [PATCH] Stop large look changes from crashing the server
 
 
 diff --git a/src/main/java/net/minecraft/world/entity/LivingEntity.java b/src/main/java/net/minecraft/world/entity/LivingEntity.java
-index 21f8794844483c870bec637942a4df8ccf272e8b..d6310c34569f8685daafddf5e96f15101dbf2e6e 100644
+index 4047c4b318a46cd2352ffcbb0f7f59d9337ae95e..6ccee491b631e2f7ee34af0dff2df837808ced69 100644
 --- a/src/main/java/net/minecraft/world/entity/LivingEntity.java
 +++ b/src/main/java/net/minecraft/world/entity/LivingEntity.java
-@@ -3072,37 +3072,15 @@ public abstract class LivingEntity extends Entity {
+@@ -3094,37 +3094,15 @@ public abstract class LivingEntity extends Entity {
          //this.level.getProfiler().pop(); // Purpur
          //this.level.getProfiler().push("rangeChecks"); // Purpur
  
