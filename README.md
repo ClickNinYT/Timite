@@ -49,4 +49,5 @@ apatch is a script written by Aikar, it can (hopefully) automatically fix these 
 To get started, you need to install `wiggle` using your package manager. This tool only available on GNU/Linux (rip Windows users, also Windows is not the best choice to develop Paper or any of its forks, as shown above in the Building section). Then:
 * `cd` into either Timite-API (if API patches fail to apply) or Timite-Server (for server patches)
 * run `../scripts/apatch.sh`
+
 If it manage to fix the conflicts, it will show a bunch of `APPLIED CLEAN` (no failed apply), else it will show you the patch file and some failed apply, which in that case press `q` to exit and fix the conflict by yourself. In case it applies successfully, run `git add .` and `git am --continue`, then `cd ..`, rebuild patches with `./gradlew rebuildPatches` and continue with the Building section.
